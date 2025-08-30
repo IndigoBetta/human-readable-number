@@ -1,13 +1,10 @@
 module.exports = function toReadable(number) {
   const units = [
-    'zero', 'one', 'two', 'three', 'four', 'five',
-    'six', 'seven', 'eight', 'nine', 'ten', 'eleven',
-    'twelve', 'thirteen', 'fourteen', 'fifteen',
-    'sixteen', 'seventeen', 'eighteen', 'nineteen'
+    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'
   ];
   const tens = [
-    '', '', 'twenty', 'thirty', 'forty', 'fifty',
-    'sixty', 'seventy', 'eighty', 'ninety'
+    '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
   ];
 
   if (number < 20) {
@@ -16,8 +13,8 @@ module.exports = function toReadable(number) {
   if (number < 100) {
     const tenPart = Math.floor(number / 10);
     const onePart = number % 10;
-    return onePart === 0
-      ? tens[tenPart]
+    return onePart === 0 
+      ? tens[tenPart] 
       : `${tens[tenPart]} ${units[onePart]}`;
   }
   const hundredPart = Math.floor(number / 100);
