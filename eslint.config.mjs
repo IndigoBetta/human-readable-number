@@ -16,6 +16,7 @@ export default defineConfig([
         ...globals.node,
         ...globals.mocha,
         ...globals.jest,
+        ...globals.assert,
        
       },
     },
