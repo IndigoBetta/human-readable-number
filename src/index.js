@@ -1,10 +1,10 @@
-module.exports function toReadable(number) {
+module.exports = function toReadable(number) {
   const units = [
-    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
-    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'
+    'zero','one','two','three','four','five','six','seven','eight','nine',
+    'ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'
   ];
   const tens = [
-    '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
+    '','','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'
   ];
 
   if (number < 20) {
